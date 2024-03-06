@@ -163,7 +163,7 @@ body {
 .plh{
     padding-left: 20px;
 }
-#event .button-event{
+.button-event{
     background-color:#DB3434;
     color: white;
     border: none;
@@ -171,7 +171,7 @@ body {
     width: 250px;
     height: 40px;
 }
-#event .button-event:hover,
+.button-event:hover,
 #so .button_thamgia:hover
 {
     background-color:#FFC7C7;

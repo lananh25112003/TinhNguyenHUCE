@@ -1,0 +1,54 @@
+#slider1{
+
+    margin-top: 40px;
+    padding-top: 50%;
+    height: 1000px;
+    background: url('../img/sukien.png') top center /cover no-repeat;
+}
+.align{
+    align-items:center ;
+    text-align: center;
+}
+#title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.left{
+
+    width: 50%;
+    
+    float: left;
+    
+    text-align: right;
+    
+    }
+    
+.right{
+    
+    width:50%;
+    
+    float: left;
+    
+    text-align: right;
+    
+    }
+.half{
+    width: 50%;
+}
+#content1{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 150px;
+}
+#content1 .content-title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#cuoi{
+    margin-top: 100px;
+    align-items: center;
+}
+#cuoi img{
+    width: 100%;
+}
