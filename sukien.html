@@ -53,13 +53,35 @@
                 <h1 class="text-upper align">28/5/2024 - 1/6/2024 | Thử thách  sắp diễn ra</h1>
             </div>
             <div class="dangki align">
-                <button class="button-event text-upper"><h3>Đăng kí tham gia</h3></button>
+                <button class="js-dangki button-event text-upper"><h3>Đăng kí tham gia</h3></button>
             </div>
         </div>
         <div id="cuoi">
             <img src="./asset/img/donrac.png" alt="">
         </div>
+        <div class="modal js-modal">
+            <div class="modal-container">
+                <h3 class="text-upper align">Đăng ký</h3>
+                <h3 class="text-upper align green">Đăng ký thành công</h3>
+                <h3 class="js-modal-close align blue">OK!</h3>
+            </div>
+        </div>
         
     </div>
+    <script>
+        const dkiBtns = document.querySelectorAll('.js-dangki')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        function showDki(){
+            modal.classList.add('open')
+        }
+        function hideDki(){
+            modal.classList.remove('open')
+        }
+        for (const dkiBtn of dkiBtns) {
+            dkiBtn.addEventListener('click',showDki)
+        }
+        modalClose.addEventListener('click',hideDki)
+    </script>
 </body>
 </html>
