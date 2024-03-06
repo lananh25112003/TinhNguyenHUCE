@@ -83,3 +83,15 @@
 .modal.open{
     display:flex;
 }
+
+
+#slider2{
+
+    margin-top: 40px;
+    padding-top: 50%;
+    height: 1000px;
+    background: url('../img/dongam.png') top center /cover no-repeat;
+}
+.ketqua img{
+    width: 100%;
+}
