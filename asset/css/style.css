@@ -255,18 +255,17 @@ table{
     width: 100%;
 }
 #bangsua .actor-sua{
-    width:30%;
+
     float: left;
-    text-align: align;
-    align-items: center;
     
 }
-.actor-sua img{
-    text-align: align;
-    align-items: center;
+#bangsua .actor-sua img{
+    width: 150px;
+    height: 150px;
 }
 #bangsua .thongtin{
-    width:60%;
+    padding-left: 50px;
+    width:1100px;
     float: left;
     text-align: align;
     
