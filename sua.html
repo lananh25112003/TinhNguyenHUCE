@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TÌNH NGUYỆN</title>
+    <link rel="icon" type="image/x-icon" href="./asset/img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./asset/css/style.css" rel="stylesheet">
+    <link rel="html" href="./sukien.html">
+    <link rel="stylesheet" href="./asset/font/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id ="header">
+            <ul id="nav">
+                <li class="face">
+                    <a href="#">
+                        <img class = "logo" src="./asset/img/logo.png" alt="logo">
+                    </a>
+                </li>
+                <li class = "find">
+                    <input type="text" id="input-find" name="Tìm kiếm">
+                    <label for="input-find" class="ti-search"></label>
+                </li>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#event">SỰ KIỆN</a></li>
+                <li><a href="#contact">LIÊN HỆ</a></li>
+                <li>
+                    <img class = "js-actor actor" src="./asset/img/actor.png" alt="actor">
+                </li>
+            </ul>
+        </div>
+        <!-- sua -->
+        <div id="bangsua">
+            <div class="actor-sua">
+                <div><img src="./asset/img/actor.png" alt=""></div>
+                <div><span class="text-upper">Nguyễn Hùng Sơn</span></div>
+            </div>
+            <div class="thongtin">
+                <div class="xam tron">THÔNG TIN CÁ NHÂN</div>
+                <div class="trang tron">
+                    <br>
+                </div>
+                <div class="xam tron">
+                    <span>NGÀY SINH:</span>
+                    <span>09/09/2004</span>
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+                <div class="trang tron">
+                    <span>SỐ ĐIỆN THOẠI:</span>
+                    <span>088789456</span>
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+                <div class="xam tron">
+                    <span>EMAIL:</span>
+                    <span >HUNGSON@1234</span>
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+                <div class="trang tron">
+                    <span>DÂN TỘC:</span>
+                    <span>KINH</span>
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+                <div class="xam tron">
+                    <span>TÔN GIÁO:</span>
+                    <span>KHÔNG</span>      
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+                <div class="trang tron">
+                    <span>NGHỀ NGHIỆP</span>
+                    <span>SINH VIÊN</span>
+                    <img src="./asset/img/pen.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <img src="./asset/img/logo.png" alt="">
+            <span class="text-upper">TRƯỜNG ĐẠI HỌC XÂY DỰNG HÀ NỘI
+                <br>Hanoi University of Civil Engineering
+                <br>Địa chỉ: Số 55 đường Giải Phóng, Hai Bà Trưng, Hà Nội
+                <br>Điện thoại: (024) 38 696 397
+                <br>Email: dhxaydung@huce.edu.vn
+                <br>Fax: 024.38.691.684</span>
+    </div>
+        <div class="menu js-menu">
+            <table class="menu-container">
+                <tr onclick="window.location.href='./sua.html'" class="sua">
+                    <td><img src="./asset/img/Tools.png" alt=""></td>
+                    <td><span class="text-upper">Sửa thông tin</span></td>
+                </tr>
+                <tr onclick="window.location.href='./lichsu.html'" class="lichsu">
+                    <td><img src="./asset/img/lichsu.png" alt=""></td>
+                    <td><span class="text-upper">Lịch sử tham gia</span></td>
+                </tr>
+                <tr class="js-menu-close out">
+                    <td><img src="./asset/img/out.png" alt=""></td>
+                    <td><span class="text-upper e">Đăng xuất</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            const actorBtns = document.querySelectorAll('.js-actor')
+            const menu = document.querySelector('.js-menu')
+            const menuClose = document.querySelector('.js-menu-close')
+            function showMenu(){
+                menu.classList.add('open')
+            }
+            function hideMenu(){
+                menu.classList.remove('open')
+            }
+            for (const actorBtn of actorBtns) {
+                actorBtn.addEventListener('click',showMenu)
+            }
+            menuClose.addEventListener('click',hideMenu)
+        </script>
+    </div>
+</body>
+</html>

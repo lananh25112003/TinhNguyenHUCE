@@ -215,3 +215,64 @@ table{
     width: 160px;
     margin:25px;
 }
+.menu{
+    position: fixed;
+    top: 200px;
+    bottom: 800px;
+    left: 1000px;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: #e9dddd;
+}
+.menu-container{
+    background-color: #fff;
+    width: 200px;
+    max-width: calc(100% - 32px) ;
+    min-height: 150px;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.menu.open{
+    display:flex;
+}
+.sua, .lichsu, .out{
+    border:1px solid #000;
+}
+.sua:hover, .lichsu:hover, .out:hover{
+    background-color: #e9dddd;
+}
+.menu table{
+    border: 1px solid #000;
+}
+#bangsua{
+    padding-top: 50px;
+    margin-left: 50px;
+    height: 350px;
+    width: 100%;
+}
+#bangsua .actor-sua{
+    width:30%;
+    float: left;
+    text-align: align;
+    align-items: center;
+    
+}
+#bangsua .thongtin{
+    width:60%;
+    float: left;
+    text-align: align;
+    
+}
+.tron{
+    border-radius: 18px;
+    height: 30px;
+    padding-left: 10px;
+}
+.xam{
+    background-color:#ddd;
+
+}

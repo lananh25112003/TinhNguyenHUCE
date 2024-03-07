@@ -26,9 +26,9 @@
                 <li><a href="#">TRANG CHỦ</a></li>
                 <li><a href="#event">SỰ KIỆN</a></li>
                 <li><a href="#contact">LIÊN HỆ</a></li>
-                <li><a href="#">
-                    <img class = "actor" src="./asset/img/actor.png" alt="actor">
-                </a></li>
+                <li>
+                    <img class = "js-actor actor" src="./asset/img/actor.png" alt="actor">
+                </li>
             </ul>
         </div>
         <div id="slider">
@@ -192,6 +192,38 @@
                     <br>Email: dhxaydung@huce.edu.vn
                     <br>Fax: 024.38.691.684</span>
         </div>
+        <div class="menu js-menu">
+            <table class="menu-container">
+                <tr onclick="window.location.href='./sua.html'" class="sua">
+                    <td><img src="./asset/img/Tools.png" alt=""></td>
+                    <td><span class="text-upper">Sửa thông tin</span></td>
+                </tr>
+                <tr onclick="window.location.href='./lichsu.html'" class="lichsu">
+                    <td><img src="./asset/img/lichsu.png" alt=""></td>
+                    <td><span class="text-upper">Lịch sử tham gia</span></td>
+                </tr>
+                <tr class="js-menu-close out">
+                    <td><img src="./asset/img/out.png" alt=""></td>
+                    <td><span class="text-upper e">Đăng xuất</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            const actorBtns = document.querySelectorAll('.js-actor')
+            const menu = document.querySelector('.js-menu')
+            const menuClose = document.querySelector('.js-menu-close')
+            function showMenu(){
+                menu.classList.add('open')
+            }
+            function hideMenu(){
+                menu.classList.remove('open')
+            }
+            for (const actorBtn of actorBtns) {
+                actorBtn.addEventListener('click',showMenu)
+            }
+            menuClose.addEventListener('click',hideMenu)
+        </script>
     </div>
 </body>
 </html>
